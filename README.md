@@ -60,6 +60,17 @@ No site oficial, tem a documentação: [Site Oficial](https://docs.docker.com/in
 
 Essa é a parte mais desafiadora de explicar, mas vamos conseguir.
 
+### Yarn
+
+Para baixar todas as dependencias do projeto, você precisa entrar na pasta cliente/servidor executando os seguintes comandos:
+
+```sh
+cd [Local da pasta principal]/cliente
+yarn
+cd ../servidor
+yarn
+```
+
 ### Docker
 
 - Em sistemas da Apple e em Linux, você precisa executar a seguinte linha de comando para criar um servidor Postgres no Docker:
@@ -79,22 +90,47 @@ Essa é a parte mais desafiadora de explicar, mas vamos conseguir.
   docker stop mapearciclofaixasDB
   ```
 - Você precisa criar um database no servidor: Para isso eu usei a interface grafica do [postbird](https://github.com/Paxa/postbird).
+  > Lembre-se de criar um database com o seguinte nome: mapearciclofaixasDB
 - Para gerar as tabelas do projeto, usei o sequelize CLI com as migrations. Dessa forma, evitamos o erro ao criar novas tabelas no ambiente de desenvolvimento.
   ```sh
   cd [Local da pasta principal]/servidor
   yarn sequelize db:migrate
   ```
 
-### Yarn
+## Iniciar o Projeto
 
-Para baixar todas as dependencias do projeto, você precisa entrar na pasta cliente/servidor executando os seguintes comandos:
+### Servidor
+
+#### Banco de dados
+
+Para iniciar o Banco de dados postgres que foi virtualizado no Docker
+
+```sh
+docker start mapearciclofaixasDB
+```
+
+#### NodeJS
+
+Para Iniciar o lado servidor
+
+```sh
+cd [Local da pasta principal]/servidor
+yarn dev
+```
+
+### Cliente
+
+Para Iniciar o lado cliente.
 
 ```sh
 cd [Local da pasta principal]/cliente
-yarn
-cd ../servidor
-yarn
+yarn dev
 ```
+
+Para abrir no navegador, precisamos olhar no terminal a porta que foi usada.
+Normalmente, é utilizada a porta 8080 se não estiver sendo utilizada.
+
+> http://localhost:8080/
 
 ## Contatos
 
