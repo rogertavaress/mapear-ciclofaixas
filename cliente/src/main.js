@@ -290,7 +290,7 @@ function montarTelaAux(tipo, id, nome, extensao_avenida, extensao_ciclofaixa) {
       eaauxinput.value = extensao_avenida;
       break;
     default:
-      eaauxinput.value = "0.0";
+      eaauxinput.value = "";
       break;
   }
 
