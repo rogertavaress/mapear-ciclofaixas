@@ -4,23 +4,83 @@
 
 - Será criado um sistema que ajuda a prefeitura do Recife a mapear as avenidas que possuem ciclofaixa.
 
-## Banco de dados
+## Sobre o Projeto
 
-- Inserir, Buscar e Excluir
-- tabelaAvenida: {
-  Nome, extensão, possui ciclofaixa(booleano),extensão da ciclofaixa, porcentagem de ciclofaixa
-  }
+Projeto desenvolvido para a seleção de Estágio da [Vectra](https://www.vectracs.com.br/) - em 12/09/2019 10:00hrs
 
-## Web
+### Tecnologias usadas
 
-- Listar os itens em cards
-- Filtrar por nome
-
-## Usar
-
-- Node
-- HTML,CSS e JS
-- MySQL
+- Node.JS
+- Sequelize(ORM)
+- Postgres
+- HTML
+- CSS
 - Bootstrap
-- Github
-- Conceito: Code first
+- JS
+
+### Checklist
+
+#### Banco de Dados
+
+- [x] Inserir
+- [x] Buscar
+- [x] Alterar
+- [x] Remover
+- [x] Tabela Avenida
+
+#### Web
+
+- [x] Listar os itens em cards
+- [x] Excluir avenida
+- [x] Cadastrar avenidas
+- [x] Atualizar lista ao cadastrar
+- [x] Atualizar lista ao remover
+- [x] Busca por nome
+
+#### Outros
+
+- [x] Publicar no GitHub
+- [x] Usar o conceito de Code First
+
+## Instalação
+
+Nessa parte, vou mostrar como é preciso instalar para executar o projeto em uma maquina local.
+
+### Yarn
+
+No site oficial, tem a documentação: [Site Oficial](https://yarnpkg.com/en/docs/install)
+
+### Docker
+
+- No site oficial, tem a documentação: [Site Oficial](https://docs.docker.com/install/)
+
+## Configuração
+
+Essa é a parte mais desafiadora de explicar, mas vamos conseguir.
+
+### Docker
+
+- Em sistemas da Apple e em linux, você precisa executar a seguinte linha de comando para criar um servidor Postgres no Docker:
+  > docker run --name mapearciclofaixasDB -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres
+- Para verificar se o servidor estar funcionando:
+  > docker ps
+- Para iniciar o servidor:
+  > docker start mapearciclofaixasDB
+- Para parar o servidor:
+  > docker stop mapearciclofaixasDB
+- Agora você precisa criar um database no servidor: Para isso eu usei a interface grafica do [postbird](https://github.com/Paxa/postbird).
+- Agora para gerar as tabelas do projeto, usei o sequelize CLI com as migrations. Dessa forma, evitamos o erro ao criar novas tabelas no ambiente de desenvolvimento.
+  > cd [Local da pasta principal/servidor
+  > yarn sequelize db:migrate
+
+### Yarn
+
+- Para baixar todas as dependencias do projeto, você precisa entrar na pasta cliente/servidor executando os seguintes comandos:
+  > cd [Local da pasta principal/cliente
+  > yarn
+  > cd ../servidor
+  > yarn
+
+## Contatos
+
+- [Linkedin](https://www.linkedin.com/in/rogertavaress/)
