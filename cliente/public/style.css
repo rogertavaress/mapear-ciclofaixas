@@ -31,6 +31,9 @@ section .title-session h1 {
 footer {
   background-color: #e9ecef;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
