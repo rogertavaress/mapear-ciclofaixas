@@ -1,0 +1,59 @@
+/* HERO */
+
+.title-site {
+  font-size: 2em;
+}
+
+/* Section */
+
+section .title-session h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+/* Cards Avenidas */
+
+.cards-avenidas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 5px;
+  min-width: 18rem;
+  max-width: 23rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: #e9ecef;
+  text-align: center;
+}
+
+footer p {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.box-card-aux {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-aux {
+  margin: 5px;
+  width: 100%;
+}
+
+.card-input input {
+  width: 100%;
+}
+
+.card-input {
+  margin: 10px 0 5px 0;
+}

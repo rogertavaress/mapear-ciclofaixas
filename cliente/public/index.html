@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mapear Ciclofaixas</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu-principal">
+      <a class="navbar-brand" href="#">MapearCiclofaixas</a>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="title-site">Gerenciamento de Ciclofaixas</h1>
+        <p>
+          Um sistema que ajuda a prefeitura do Recife a mapear as avenidas que
+          possuem ciclofaixa.
+        </p>
+        <p>
+          <button
+            class="btn btn-primary btn-lg"
+            data-toggle="modal"
+            data-target="#mdAvenidas"
+            role="button"
+            id="btCadastrar"
+          >
+            Cadastrar uma Avenida
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <section>
+      <div class="title-session">
+        <h1>Lista de Avenidas</h1>
+        <div class="input-group mb-3" style="width: 80%; margin: auto">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Buscar por avenidas"
+            aria-label="Buscar por avenidas"
+            aria-describedby="button-addon2"
+            id="inputBuscar"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="btBuscar"
+            >
+              Buscar
+            </button>
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="btMostrarTodas"
+            >
+              Mostrar Todas
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="box-card-aux"></div>
+      <hr />
+      <div class="cards-avenidas"></div>
+    </section>
+    <footer>
+      <p>
+        Feito por <a href="http://github.com/rogertavaress">Rogério Tavares</a>
+      </p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Meus Scripts-->
+    <script src="./bundle.js"></script>
+    <script>
+      function remover(value) {
+        removerAvenida(value);
+      }
+
+      function alterar(value) {
+        //Alterar
+      }
+    </script>
+  </body>
+</html>
