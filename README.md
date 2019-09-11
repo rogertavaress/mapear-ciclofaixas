@@ -4,11 +4,11 @@
 
 ## Objetivo
 
-Será criado um sistema que ajuda a prefeitura do Recife a mapear as avenidas que possuem ciclofaixa.
+Criar um sistema que ajuda a prefeitura do Recife a mapear as avenidas que possuem ciclofaixa.
 
 ## Sobre o Projeto
 
-Projeto desenvolvido para a seleção de Estágio da [Vectra](https://www.vectracs.com.br/) - em 12/09/2019 10:00hrs
+Projeto desenvolvido para seleção de Estágio em 12/09/2019 10:00hrs
 
 ### Tecnologias usadas
 
@@ -46,7 +46,7 @@ Projeto desenvolvido para a seleção de Estágio da [Vectra](https://www.vectra
 
 ## Instalação
 
-Nessa parte, vou mostrar como é preciso instalar para executar o projeto em uma maquina local.
+Nessa parte, vou mostrar o que é preciso para executar o projeto em uma maquina local.
 
 ### Yarn
 
