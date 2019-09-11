@@ -81,7 +81,7 @@ Essa é a parte mais desafiadora de explicar, mas vamos conseguir.
 - Você precisa criar um database no servidor: Para isso eu usei a interface grafica do [postbird](https://github.com/Paxa/postbird).
 - Para gerar as tabelas do projeto, usei o sequelize CLI com as migrations. Dessa forma, evitamos o erro ao criar novas tabelas no ambiente de desenvolvimento.
   ```sh
-  cd [Local da pasta principal/servidor
+  cd [Local da pasta principal]/servidor
   yarn sequelize db:migrate
   ```
 
@@ -90,7 +90,7 @@ Essa é a parte mais desafiadora de explicar, mas vamos conseguir.
 Para baixar todas as dependencias do projeto, você precisa entrar na pasta cliente/servidor executando os seguintes comandos:
 
 ```sh
-cd [Local da pasta principal/cliente
+cd [Local da pasta principal]/cliente
 yarn
 cd ../servidor
 yarn
