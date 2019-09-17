@@ -12,7 +12,6 @@ class App {
 
   middlewares() {
     this.server.use(express.json());
-    this.server.use(express.static("public"));
     this.server.use((req, res, next) => {
       res.header("Access-Control-Allow-Origin", "*");
       res.header(
